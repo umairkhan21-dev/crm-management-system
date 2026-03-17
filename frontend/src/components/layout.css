@@ -1,0 +1,156 @@
+/* Layout */
+.layout-container {
+  display: flex;
+  min-height: 100vh;
+  font-family: "Inter", system-ui;
+  background: var(--bg-color) 
+  #f4f7fb;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 240px;
+  background: #e8f4ff;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 800;
+  color: #2563eb;
+  margin-bottom: 30px;
+}
+
+.nav-menu {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.nav-link {
+  padding: 12px 14px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #1f2937;
+  font-size: 15px;
+}
+
+.nav-link.active,
+.nav-link:hover {
+  background: #cfe6ff;
+  color: #1e40af;
+}
+
+.theme-toggle {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background: #f1f9ff;
+  cursor: pointer;
+}
+
+/* Main */
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-color);
+}
+
+/* Topbar */
+.topbar {
+  height: 64px;
+  background: #eaf6ff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+}
+
+.search-input {
+  width: 320px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #c7ddf7;
+}
+
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.welcome-text {
+  font-size: 14px;
+  color: #8894a2;
+}
+
+.logout-btn {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Content */
+.content-area {
+  padding: 32px;
+}
+/* ===== DARK THEME ===== */
+body.dark {
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+/* Sidebar */
+body.dark .sidebar {
+  background: #020617;
+}
+
+body.dark .nav-link {
+  color: #cbd5f5;
+}
+
+body.dark .nav-link.active,
+body.dark .nav-link:hover {
+  background: #1e293b;
+  color: #e0e7ff;
+}
+
+/* Topbar */
+body.dark .topbar {
+  background: #020617;
+  border-bottom: 1px solid #1e293b;
+}
+
+body.dark .search-input {
+  background: #020617;
+  border: 1px solid #1e293b;
+  color: white;
+}
+
+/* Cards & content */
+body.dark .content-area {
+  background: #020617;
+}
+
+/* Buttons */
+body.dark .logout-btn,
+body.dark .theme-toggle {
+  background: #1e293b;
+  color: #e5e7eb;
+}
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-icon {
+  font-size: 18px;
+}

@@ -1,0 +1,84 @@
+/* Topbar container */
+.topbar {
+  height: 64px;
+  background: #eaf6ff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  border-bottom: 1px solid #dbeafe;
+}
+
+/* Search input */
+.topbar-search {
+  width: 320px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #c7ddf7;
+  font-size: 14px;
+  outline: none;
+}
+
+/* Right section */
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+/* User text */
+.topbar-user {
+  font-size: 14px;
+  color: #1f2937;
+}
+
+/* Logout button */
+.topbar-logout {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+
+  /* IMPORTANT for icon */
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Hover */
+.topbar-logout:hover {
+  background: #1e40af;
+}
+
+/* Make Lucide icon visible */
+.topbar-logout svg {
+  stroke: currentColor;
+}
+
+/* ================= DARK MODE ================= */
+
+body.dark .topbar {
+  background: #020617;
+  border-bottom: 1px solid #1e293b;
+}
+
+body.dark .topbar-search {
+  background: #020617;
+  color: #e5e7eb;
+  border: 1px solid #1e293b;
+}
+
+body.dark .topbar-user {
+  color: #e5e7eb;
+}
+
+body.dark .topbar-logout {
+  background: #1e40af;
+}
+
+body.dark .topbar-logout:hover {
+  background: #1d4ed8;
+}
