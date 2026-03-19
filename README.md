@@ -77,4 +77,4 @@ Password: staff123
 
 ## 👨‍💻 Author
 
-Umair Khan
+Mohd. Umair Khan
